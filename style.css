@@ -1,98 +1,125 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container{
+
+.container {
     position: relative;
     width: 100%;
     height: 100%;
     max-width: 1000px;
-    min-height: 1250px;
+    min-height: 1200px;
     background: white;
     margin: 50px;
     display: grid;
-    grid-template-columns: 1fr 2.5fr ;
+    grid-template-columns: 1fr 2.5fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-.container.left{
+
+.container.left_container {
     position: relative;
 }
-.header_left{
+
+.header_container {
     background-color: rgb(226, 226, 226);
     height: 35px;
 }
-.profile_left{
+
+.avt_container {
     background-color: white;
     height: 15%;
     text-align: center;
 }
-.img_avt{
+
+.avt_img {
     border-radius: 50%;
     width: 160px;
     height: 160px;
     border: 1px solid black;
     margin-top: 15px;
 }
-.information_left{
+
+.left_information_container {
     background-color: rgb(226, 226, 226);
     height: 82%;
-}
-.container_information{
-    margin-right: 30px;
     padding-top: 1px;
+    padding-right: 30px;
 }
 
-.column_title_left{
+.left_title_container {
     margin-top: 34px;
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 8fr 1.5fr ;
+    grid-template-columns: 8fr 1.5fr;
     max-width: 1000px;
 }
 
-.contact_information{
+h6 {
+    color: white;
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.contact_information,
+.education_information,
+.hobbies_information,
+.reference_information {
     margin-top: 20px;
     margin-left: 32px;
 }
-.contact{
+
+.phone_container,
+.email_container,
+.domain_container {
     display: flex;
     height: 25px;
     width: 100%;
     border-bottom: 1px solid rgb(180, 180, 180);
     align-items: center;
 }
-.contact_diff{
+
+.address_container {
     display: flex;
     height: 25px;
     width: 100%;
     align-items: center;
 }
 
-.icon{
+.icon_phone,
+.icon_email,
+.icon_domain,
+.icon_address {
     height: 15px;
     width: 15px;
     margin-right: 7px;
 }
 
-.information{
-    color: rgb(56,55,58);
+.phone_information,
+.email_informaiton,
+.domain_informaiton,
+address_information {
+    color: rgb(56, 55, 58);
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
 }
-.title{
+
+.information_title {
     color: rgb(46, 46, 46);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -100,115 +127,115 @@ body{
     font-style: normal;
     margin-top: 5px;
 }
-.decription_education{
-    color: rgb(56,55,58);
+
+.education_description,
+.hobbie_description,
+.reference_description {
+    color: rgb(56, 55, 58);
     font-family: 'Poppins', sans-serif;
     margin-bottom: 3px;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    text-align: justify;
+    text-align: left;
 }
 
-
-
-
-.container.right{
+.container.right_container {
     position: relative;
-    
 }
-.content_right{
+
+.right_information_container {
     margin-left: 25px;
     margin-right: 15px;
     background-color: white;
 }
-.profile_right{
+
+.profile_right {
     height: 26%;
     margin-top: 45px;
 }
 
-.name{
+.name {
     font-size: 45px;
     font-weight: 700;
-    color: rgba(52,50,53,255);
+    color: rgba(52, 50, 53, 255);
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 60px;
     margin-bottom: 5px;
 }
-.major{
+
+.job {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: rgba(85,85,85,255);
+    color: rgba(85, 85, 85, 255);
     text-align: justify;
     font-style: normal;
-    margin-bottom: 73px;
+    margin-bottom: 65px;
 }
 
-.column_title_right{
+.right_title_container {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 8fr 0.5fr ;
+    grid-template-columns: 8fr 0.5fr;
     margin-top: 48px;
     margin-bottom: 20px;
 }
-.container_name_title{
-    background-color: rgba(52,50,53,255);
+
+.title_name_container {
+    background-color: rgba(52, 50, 53, 255);
     margin-right: 10px;
     padding: 2px;
 }
-.name_title{
+
+.title_name {
     color: white;
     font-size: 18px;
     margin-left: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-.container_first_chacracter{
-    background-color: rgba(52,50,53,255);
+
+.first_chacracter_container {
+    background-color: rgba(52, 50, 53, 255);
     padding: 2px;
     align-items: center;
     text-align: center;
 }
-.title_chacracter{
+
+.first_chacracter {
     text-align: center;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: white;
 }
-.timeline_expe{
+
+.timeline_exp {
     display: flex;
     align-items: center;
     height: 100%;
 }
-.column_1{
+
+.column_1 {
     background-color: rgb(125, 125, 129);
     width: 3px;
     height: 45px;
     margin-left: 10px;
     margin-right: 5px;
 }
-.column_2{
+
+.column_2 {
     background-color: rgb(125, 125, 129);
     width: 3px;
     height: 45px;
     margin-right: 10px;
+}
 
-}
-.decripsion_personal{
-    color: rgb(46, 45, 48);
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: justify;
-    margin-bottom: 3px;
-    margin-top: 5px;
-}
-.decripsion_skill{
-    width: 100px;
+.personal_description,
+.company_name,
+.exp_description {
     color: rgb(46, 45, 48);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -219,105 +246,125 @@ body{
     margin-top: 5px;
 }
 
-.skill_content{
+.skill_description {
+    width: 120px;
+    color: rgb(46, 45, 48);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
+.list_item_skill {
+    display: flex;
+    margin-top: 20px;
+}
+
+.list_item_skill_right {
+    margin-left: auto;
+}
+
+.skill_content {
     display: flex;
     margin-top: 3px;
     margin-right: 10px;
     align-items: center;
     text-align: left;
 }
-.skill_bar{
+
+.skill_bar {
     background-color: white;
     border: 1px solid black;
-    width: 100px;
+    width: 150px;
     margin-left: 20px;
     height: 10px;
 }
-.skill_bar span{
+
+.skill_bar span {
     position: relative;
     display: block;
     height: 100%;
     border-inline-start-width: 80%;
     background: black;
-    
 }
-
 
 @media only screen and (max-width: 996px) {
-    .major{
-        margin-bottom: 72px;
+    .job {
+        margin-bottom: 67px;
     }
-    .column_title_right{
-        grid-template-columns: 7fr 0.6fr ;
+
+    .right_title_container {
+        grid-template-columns: 7fr 0.6fr;
     }
 }
+
 @media only screen and (max-width: 825px) {
-    .major{
-        margin-bottom: 80px;
+    .job {
+        margin-bottom: 67px;
+    }
+
+    .right_information_container {
+        margin-right: 20px;
     }
 }
-@media only screen and (max-width: 796px) {
-    .major{
-        margin-bottom: 83px;
-    }
-    .column_title_right{
-        grid-template-columns: 7fr 0.7fr ;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .major{
-        
-        margin-bottom: 85px;
-    }
-    .column_title_right{
-        grid-template-columns: 7fr 1fr ;
-    }
-    .information_left{
-        height: 82.3%;
-    }
-}
+
 @media only screen and (max-width: 700px) {
-    .major{
-        margin-bottom: 60px;
+    .job {
+        margin-bottom: 65px;
     }
-    .column_title_right{
-        grid-template-columns: 7fr 1fr ;
+
+    .right_title_container {
+        grid-template-columns: 7fr 1fr;
     }
-    .name{
+
+    .name {
         margin-top: 50px;
     }
-    .img_avt{
+
+    .img_avt {
         margin-top: 20px;
     }
-    .information_left{
+
+    .left_information_container {
         height: 83.5%;
     }
-    
-    .profile_left{
+
+    .avt_container {
         height: 14%;
     }
 }
 
 @media (max-width: 600px) {
-    .container{
+    .container {
         grid-template-columns: 1fr;
     }
-    .img_avt{
+
+    .img_avt {
         margin-top: 10px;
         width: 130px;
         height: 130px;
     }
-    .column_title_left{
-        grid-template-columns: 7fr 0.8fr ;
+
+    .left_title_container {
+        grid-template-columns: 7fr 0.8fr;
     }
-    .column_title_right{
-        grid-template-columns: 7fr 1fr ;
+
+    .right_title_container {
+        grid-template-columns: 7fr 1fr;
     }
-    .container_first_chacracter{
+
+    .container_first_chacracter {
         display: flex;
     }
-    .title_chacracter{
+
+    .first_chacracter {
         margin: auto;
     }
-}
 
+    .skill_bar {
+        width: 130px;
+    }
+}
